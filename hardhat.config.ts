@@ -32,6 +32,8 @@ const config: HardhatUserConfig = {
         kovan: { accounts, ...getRemoteNetworkConfig("kovan") },
         rinkeby: { accounts, ...getRemoteNetworkConfig("rinkeby") },
         ropsten: { accounts, ...getRemoteNetworkConfig("ropsten") },
+        mumbai: { accounts, ...getRemoteNetworkConfig("mumbai") },
+        matic: { accounts, ...getRemoteNetworkConfig("matic") },
     },
     paths: {
         artifacts: "./artifacts",
@@ -40,7 +42,7 @@ const config: HardhatUserConfig = {
         tests: "./test",
     },
     solidity: {
-        version: "0.8.0",
+        version: "0.7.6",
         settings: {
             // https://hardhat.org/hardhat-network/#solidity-optimizer-support
             optimizer: {
